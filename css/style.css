@@ -15,10 +15,12 @@
   --success: #44b960;
   --warning: #dda728;
   --text: #b7b9bd;
+  --text-white: #ffffff;
 }
 body {
   background-color: var(--dark);
 }
+/*------------------------ Facebook Navigation --------------------------------*/
 .nav {
   background-color: var(--semi-dark);
   display: flex;
@@ -56,6 +58,7 @@ body {
   width: 50%;
 }
 .center-box {
+  margin-top: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,17 +73,17 @@ body {
   align-items: center;
   border-top: 3px solid var(--semi-dark);
   border-bottom: 3px solid var(--semi-dark);
-  transition: 0.5s;
+  /* transition: 0.2s; */
 }
 .center-link.active {
   border-bottom-color: var(--primary) !important;
 }
 .center-link i {
-  font-size: 20px;
+  font-size: 22px;
 }
 .center-link:hover {
   background-color: var(--soft-dark);
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .center-link i.active {
   color: var(--primary);
@@ -141,4 +144,76 @@ body {
   justify-content: center;
   align-items: center;
   margin: 10px;
+}
+/*------------------------ Facebook Body ---------------------------------*/
+.fb-body {
+  display: flex;
+}
+.left-side {
+  width: 25%;
+}
+.new-feeds {
+  width: 50%;
+}
+.story-list {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.story {
+  width: 150px;
+  height: 220px;
+  border-radius: 6px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px;
+  margin-right: 20px;
+}
+.story-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.story-img {
+  width: 34px;
+  height: 34px;
+  background-size: cover;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.story-img.first-item {
+  background-color: var(--soft-dark);
+}
+.story-img i {
+  color: var(--text-white);
+  font-size: 20px;
+}
+.story-text {
+  font-size: 18px;
+  color: var(--text-white);
+}
+.side-icon {
+  width: 45px;
+  height: 45px;
+  background-color: var(--soft-dark);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 95px;
+  right: 50px;
+}
+.chat {
+  width: 25%;
 }
