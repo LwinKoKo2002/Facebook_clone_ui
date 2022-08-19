@@ -159,7 +159,7 @@ body {
   position: relative;
   margin-top: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .story {
   width: 150px;
@@ -171,7 +171,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 10px 10px;
-  margin-right: 20px;
 }
 .story-profile {
   width: 40px;
@@ -212,7 +211,94 @@ body {
   align-items: center;
   position: absolute;
   top: 95px;
-  right: 50px;
+  right: -20px;
+}
+.add-post {
+  background-color: var(--semi-dark);
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+.add-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-text-profile {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.add-text-box {
+  background-color: var(--soft-dark);
+  padding: 10px 20px;
+  border-radius: 200px;
+  flex-grow: 1;
+}
+.add-text-box .add-text-input {
+  width: 100%;
+  background-color: var(--soft-dark);
+  border: none;
+  font-size: 16px;
+}
+.divider {
+  height: 1px;
+  background-color: var(--soft-dark);
+  margin: 20px 0px;
+}
+.add-post-feature {
+  display: flex;
+}
+.add-post-feature .video {
+  text-align: center;
+  flex-grow: 1;
+  padding: 5px;
+}
+.add-post-feature .video i {
+  color: var(--danger);
+  font-size: 20px;
+  margin-right: 5px;
+}
+.add-post-feature .video span {
+  font-size: 16px;
+}
+.add-post-feature .video:hover {
+  background-color: var(--soft-dark);
+  border-radius: 6px;
+}
+.add-post-feature .photo {
+  text-align: center;
+  flex-grow: 1;
+  padding: 5px;
+}
+.add-post-feature .photo i {
+  color: var(--success);
+  font-size: 20px;
+  margin-right: 5px;
+}
+.add-post-feature .photo span {
+  font-size: 16px;
+}
+.add-post-feature .photo:hover {
+  background-color: var(--soft-dark);
+  border-radius: 6px;
+}
+.add-post-feature .feeling {
+  text-align: center;
+  flex-grow: 1;
+  padding: 5px;
+}
+.add-post-feature .feeling i {
+  color: var(--warning);
+  font-size: 20px;
+  margin-right: 5px;
+}
+.add-post-feature .feeling span {
+  font-size: 16px;
+}
+.add-post-feature .feeling:hover {
+  background-color: var(--soft-dark);
+  border-radius: 6px;
 }
 .chat {
   width: 25%;
