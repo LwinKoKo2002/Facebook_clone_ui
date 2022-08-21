@@ -149,20 +149,113 @@ body {
 .fb-body {
   display: flex;
 }
+/*-------------------------- Left Side -----------------------------------*/
 .left-side {
+  height: 100vh;
+  overflow: scroll;
   width: 25%;
 }
+.left-side-box {
+  margin-top: 20px;
+}
+.left-side-feature {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.left-side-feature i {
+  font-size: 25px;
+  margin-right: 20px;
+}
+.left-side-feature .fa-youtube {
+  color: var(--primary);
+}
+.left-side-feature .fa-calendar-check {
+  color: var(--danger);
+}
+.left-side-feature .fa-user-group {
+  color: var(--primary);
+}
+.left-side-feature .fa-clock {
+  color: var(--primary);
+}
+.left-side-img {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.left-side-text {
+  font-size: 16px;
+}
+.left-side-button {
+  background-color: var(--soft-dark);
+  padding: 8px 20px;
+  margin: 0px 40px 20px 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-side-button .mr-1 {
+  margin-right: 10px;
+}
+.divide {
+  height: 1px;
+  background-color: var(--soft-dark);
+  margin: 20px 40px 20px 12px;
+}
+.second-left-side {
+  margin-top: 20px;
+}
+.second-side-icon {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 40px 20px 0px;
+}
+.second-side-feature {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0px 40px 20px 0px;
+}
+.second-side-img {
+  width: 50px;
+  height: 40px;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.second-side-text {
+  font-size: 18px;
+}
+.bottom-dev {
+  height: 50vh;
+}
+.second-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+/*----------------------------- New Feed ------------------------*/
 .new-feeds {
   width: 50%;
+  /* overflow: scroll; */
 }
+/*------------------------------ Story List ---------------------*/
 .story-list {
   position: relative;
   margin-top: 20px;
+  margin: 20px 20px;
   display: flex;
   justify-content: space-between;
 }
 .story {
-  width: 150px;
+  width: 140px;
   height: 220px;
   border-radius: 6px;
   background-size: cover;
@@ -211,13 +304,14 @@ body {
   align-items: center;
   position: absolute;
   top: 95px;
-  right: -20px;
+  right: -18px;
 }
+/*----------------------------- Add Post ----------------------*/
 .add-post {
   background-color: var(--semi-dark);
   border-radius: 6px;
   padding: 10px 20px;
-  margin-top: 20px;
+  margin: 20px 20px;
 }
 .add-text {
   display: flex;
@@ -300,6 +394,8 @@ body {
   background-color: var(--soft-dark);
   border-radius: 6px;
 }
+/*------------------------------ Chat ----------------------------*/
 .chat {
   width: 25%;
+  overflow: scroll;
 }
